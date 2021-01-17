@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 use AnalyzeAccessLogFarpost\Analyzer;
 use AnalyzeAccessLogFarpost\Parser;
-use AnalyzeAccessLogFarpost\Domain\MeasureInterval;
+use AnalyzeAccessLogFarpost\MeasureInterval;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$options              = getopt('u:t:s::v') ?: [];
+$options              = getopt('u:t:') ?: [];
 $minAvailabilityLevel = (float) $options['u'];
 $maxResponseTime      = (int) $options['t'];
 validateInput($options);
