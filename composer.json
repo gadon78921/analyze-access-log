@@ -1,0 +1,11 @@
+{
+    "name": "gadon78921/analyze-access-log-farpost",
+    "description": "Analyze access log",
+    "type": "project",
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
